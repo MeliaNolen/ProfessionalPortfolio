@@ -32,7 +32,7 @@ body{ margin:0px 0px; }
     font-weight: bold;
 }
 
-.circle-shape-example { 
+.circle-shape-example, .technologies { 
     margin: 2rem; 
 }
 .circle-shape-example p { 
@@ -41,9 +41,36 @@ body{ margin:0px 0px; }
 .circle-shape-example .curve { 
     width: 33%; height: auto;
     min-width: 150px;
-    float: left;
     margin-right:2rem; 
     border-radius: 50%;
     -webkit-shape-outside:circle();
     shape-outside:circle();
+}
+
+
+.tech-icon-section {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+
+.tech-icon {
+    grid-column-start: span(1);
+    height: 130px;
+    justify-self: center;
+}
+
+.rellax {
+    position:static;
+    z-index: 1;
+}
+
+#about, .below-parallax {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+}
+
+.container {
+    height:200px;
 }
