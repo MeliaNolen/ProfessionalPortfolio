@@ -20,5 +20,19 @@ $(document).ready(function() {
         fullscreen();         
     });
 
-    
+
+    var rellax = new Rellax('.rellax');
+    function resize() {  
+        var intViewportWidth = window.innerWidth;
+        console.log(intViewportWidth);
+        if (intViewportWidth < 850) {
+            rellax.destroy();
+            console.log('destroyed');
+        }
+        else {
+            rellax.refresh();
+        }
+    }
+    resize();
+    window.onresize = resize;
 });
