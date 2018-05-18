@@ -19,22 +19,6 @@ body{ margin:0px 0px; }
 
 }
 
-#content{
-  padding:100px 50px;
-  text-align:center;
-  width:80%;
-  margin:0px auto;
-}
-
-#content h2{
-  margin:0px 0px 30px 0px;
-}
-
-#footer{
-  padding:30px 0px;
-  text-align:center;
-  background:#ddd;
-}
 
 .demo-toggle-title {
     margin-top: 0.5rem;
@@ -46,4 +30,20 @@ body{ margin:0px 0px; }
 
 .menu .active {
     font-weight: bold;
+}
+
+#circle-shape-example { 
+    margin: 2rem; 
+}
+#circle-shape-example p { 
+    line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+    width: 33%; height: auto;
+    min-width: 150px;
+    float: left;
+    margin-right:2rem; 
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
 }
