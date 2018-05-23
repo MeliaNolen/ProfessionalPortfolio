@@ -1,0 +1,27 @@
+.circle-shape-example, .technologies 
+    margin: 2rem
+
+.circle-shape-example p  
+    line-height: 1.5
+    font-size: 15pt
+
+.circle-shape-example .curve 
+    width: 25% 
+    height: auto
+    min-width: 150px
+    margin-right: 3rem 
+    margin-bottom: 2rem
+    border-radius: 50%
+    -webkit-shape-outside: circle()
+    shape-outside: circle()
+
+.circle-shape-example
+    margin: 40px 100px
+
+@media (max-width: 500px)
+    .circle-shape-example
+        margin: 20px 40px
+
+@media (max-width: 350px)
+    .circle-shape-example
+        margin: 10px 20px
